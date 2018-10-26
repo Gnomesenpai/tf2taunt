@@ -44,7 +44,7 @@ public OnPluginStart()
 	RegAdminCmd("sm_taunts", Cmd_TauntMenu, ADMFLAG_CUSTOM6, "Taunt Menu");
 	CloseHandle(conf);
 	LoadTranslations("common.phrases");
-	CreateConVar("tf_tauntem_version", PLUGIN_VERSION, "[TF2] Taunt 'em Version", FCVAR_NOTIFY|FCVAR_PLUGIN);
+	CreateConVar("tf_tauntem_version", PLUGIN_VERSION, "[TF2] Taunt 'em Version", FCVAR_NOTIFY);
 }
 
 public Action:Cmd_TauntMenu(client, args)
