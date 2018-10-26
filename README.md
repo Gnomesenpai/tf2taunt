@@ -1,5 +1,7 @@
 # tf2taunt
-FlaminSarge's TF2 taunt plugin (hopefully kept up to date)
+FlaminSarge's TF2 taunt plugin
+
+Github made to keep track of changes and added taunts.
 
 Link to allied modders thread: https://forums.alliedmods.net/showthread.php?t=242866&page=1
 
