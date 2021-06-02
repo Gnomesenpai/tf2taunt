@@ -4,7 +4,7 @@
 #include <tf2items>
 #include <tf2_stocks>
 
-#define PLUGIN_VERSION "1.0"
+#define PLUGIN_VERSION "1.1"
 
 public Plugin:myinfo =
 {
@@ -75,6 +75,8 @@ public Action:ShowMenu(client)
 			AddMenuItem(menu, "30917", "The Trackman's Touchdown [Scout]");
 			AddMenuItem(menu, "30920", "The Bunnyhopper [Scout]");
 			AddMenuItem(menu, "30921", "Runner's Rhythm [Scout]");
+			AddMenuItem(menu, "31156", "The Boston Boarder [Scout]");
+			AddMenuItem(menu, "31161", "Spin-to-Win [Scout]");
 		}
 		case TFClass_Soldier:
 		{
@@ -82,6 +84,7 @@ public Action:ShowMenu(client)
 			AddMenuItem(menu, "1113", "Fresh Brewed Victory [Soldier]");
 			AddMenuItem(menu, "30673", "Soldier's Requiem [Soldier]");
 			AddMenuItem(menu, "30761", "The Fubar Fanfare [Soldier]");
+			AddMenuItem(menu, "31155", "Rocket Jockey [Soldier]");
 		}
 		case TFClass_Pyro:
 		{
@@ -90,6 +93,7 @@ public Action:ShowMenu(client)
 			AddMenuItem(menu, "30570", "Pool Party [Pyro]");
 			AddMenuItem(menu, "30763", "The Balloonibouncer [Pyro]");
 			AddMenuItem(menu, "30919", "The Skating Scorcher [Pyro]");
+			AddMenuItem(menu, "31157", "Scorcher's Solo [Pyro]");
 		}
 		case TFClass_DemoMan:
 		{
@@ -97,6 +101,7 @@ public Action:ShowMenu(client)
 			AddMenuItem(menu, "1120", "Oblooterated [Demoman]");
 			AddMenuItem(menu, "30671", "Bad Pipes [Demoman]");
 			AddMenuItem(menu, "30840", "Scotsmann's Stagger [Demoman]");
+			AddMenuItem(menu, "31153", "The Pooped Deck [Demoman]");
 		}
 		case TFClass_Heavy:
 		{
@@ -112,12 +117,14 @@ public Action:ShowMenu(client)
 			AddMenuItem(menu, "30845", "Jumping Jack [Engineer]");
 			AddMenuItem(menu, "1115", "Rancho Relaxo [Engineer]");
 			AddMenuItem(menu, "30618", "Bucking Bronco [Engineer]");
+			AddMenuItem(menu, "31160", "Texas Truckin' [Engineer]");
 		}
 		case TFClass_Medic:
 		{
 			AddMenuItem(menu, "477", "Meet the Medic [Medic]");
 			AddMenuItem(menu, "1109", "Results Are In [Medic]");
 			AddMenuItem(menu, "30918", "Surgeon's Squeezebox [Medic]");
+			AddMenuItem(menu, "31154", "Time Out Therapy [Medic]");
 		}
 		case TFClass_Sniper:
 		{
@@ -151,6 +158,7 @@ public Action:ShowMenu(client)
 	AddMenuItem(menu, "30621", "Burtchester [Any]");
 	AddMenuItem(menu, "30672", "Zoomin' Broom [Any]");
 	AddMenuItem(menu, "30816", "Second Rate Sourcery [Any]");
+	AddMenuItem(menu, "31162", "Fist Bump [Any]");
 	
 	DisplayMenu(menu, client, 20);
 }
